@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.02.2
+%define		kdeappsver	24.05.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		elisa
 Summary:	Elisa music player
 Name:		ka6-%{kaname}
-Version:	24.02.2
+Version:	24.05.0
 Release:	1
 License:	LGPL v3+
 Group:		Applications/Multimedia
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	885beb0f4988693e2fcbaaf8ae3b166f
+# Source0-md5:	97f1c4fb4c17a1f95a0e0d398252bf9e
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= 5.15.2
 BuildRequires:	Qt6Core-devel >= %{qtver}
@@ -110,10 +110,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/elisa
 %ghost %{_libdir}/elisa/libelisaLib.so.0
 %attr(755,root,root) %{_libdir}/elisa/libelisaLib.so.0.1
-%dir %{_libdir}/qt6/qml/org/kde/elisa
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/elisa/libelisaqmlplugin.so
-%{_libdir}/qt6/qml/org/kde/elisa/plugins.qmltypes
-%{_libdir}/qt6/qml/org/kde/elisa/qmldir
 %{_desktopdir}/org.kde.elisa.desktop
 %{_datadir}/dbus-1/services/org.kde.elisa.service
 %{_iconsdir}/hicolor/128x128/apps/elisa.png
