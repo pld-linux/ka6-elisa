@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.0
+%define		kdeappsver	24.05.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		elisa
 Summary:	Elisa music player
 Name:		ka6-%{kaname}
-Version:	24.05.0
+Version:	24.05.1
 Release:	1
 License:	LGPL v3+
 Group:		Applications/Multimedia
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	97f1c4fb4c17a1f95a0e0d398252bf9e
+# Source0-md5:	04dc31627813b24535e297a95b891b6b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Concurrent-devel >= 5.15.2
 BuildRequires:	Qt6Core-devel >= %{qtver}
@@ -64,6 +64,7 @@ BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vlc-devel
 BuildRequires:	xz
+Obsoletes:	ka5-%{kaname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
