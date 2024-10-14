@@ -109,6 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/elisa
+%dir %{_libdir}/elisa
 %ghost %{_libdir}/elisa/libelisaLib.so.0
 %attr(755,root,root) %{_libdir}/elisa/libelisaLib.so.0.1
 %{_desktopdir}/org.kde.elisa.desktop
@@ -120,6 +121,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/48x48/apps/elisa.png
 %{_iconsdir}/hicolor/64x64/apps/elisa.png
 %{_iconsdir}/hicolor/scalable/apps/elisa.svg
-%{_localedir}/bs/LC_MESSAGES/elisa.mo
 %{_datadir}/metainfo/org.kde.elisa.appdata.xml
 %{_datadir}/qlogging-categories6/elisa.categories
