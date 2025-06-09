@@ -56,9 +56,9 @@ BuildRequires:	kf6-kwidgetsaddons-devel >= 5.92.0
 BuildRequires:	kf6-kxmlgui-devel >= 5.92.0
 BuildRequires:	kf6-solid-devel >= 5.92.0
 BuildRequires:	ninja
+BuildRequires:	phonon-qt6-devel
 BuildRequires:	pkgconfig
 BuildRequires:	qt6-build >= %{qtver}
-BuildRequires:	qt6-phonon-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
