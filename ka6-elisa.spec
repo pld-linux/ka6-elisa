@@ -8,7 +8,7 @@
 Summary:	Elisa music player
 Name:		ka6-%{kaname}
 Version:	25.08.2
-Release:	1
+Release:	2
 License:	LGPL v3+
 Group:		Applications/Multimedia
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
