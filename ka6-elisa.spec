@@ -6,6 +6,7 @@
 %define		qtver		5.15.2
 %define		kaname		elisa
 Summary:	Elisa music player
+Summary(pl.UTF-8):	Odtwarzacz muzyczny Elisa
 Name:		ka6-%{kaname}
 Version:	26.04.1
 Release:	1
@@ -77,6 +78,16 @@ indexer using Baloo. The private one can be configured to scan music
 on chosen paths. The Baloo one is much faster because Baloo is
 providing all needed data from its own database. You can build and
 play your own playlist.
+
+%description -l pl.UTF-8
+Elisa jest prostym odtwarzaczem muzyki, którego celem jest wywarcie
+miłego wrażenia na użytkownikach. Elisa pozwala na przeglądanie muzyki
+po albumach, artystach lub wszystkich ścieżkach. Muzyka jest
+indeksowana albo korzystając z własnego indeksera, albo z Baloo. Własny
+indekser można skonfigurować, aby przeszukiwał utwory na wybranych
+katalogach. Indekser Baloo jest znacznie szybszy, bo Baloo dostarcza
+wszystkie potrzebne dane ze swojej bazy. Możesz też tworzyć i odgrywać
+swoje własne playlisty.
 
 %prep
 %setup -q -n %{kaname}-%{version}
